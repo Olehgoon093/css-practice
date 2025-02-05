@@ -1,1 +1,70 @@
+.people{
+  
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  row-gap: 30px;
+  column-gap: 40px;
+  justify-content: center;
+}
 
+@media (min-width: 500px) {
+  .people{
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (min-width: 750px) {
+  .people{
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .people{
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+
+@media (min-width: 1500px) {
+  .people{
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+
+.person{
+   width: 200px;
+  height: 231; 
+   top: 30px;
+  left: 55px; 
+  cursor: pointer;
+  transition: background-color, border-radiusl, width, height 1s;
+}
+
+.person:hover{
+  background-color: #eeee;
+  border-radius:  10px;
+  width: 220px;
+  height: 287px;
+}
+
+.photo{
+  width: 200px;
+  height: 200px;
+  top: 30px;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+.photo img {
+  object-fit: cover; 
+   width: 200px;
+  height: 200px;
+}
+
+.person:hover img {
+ border-radius: 60px;
+ overflow: hidden;
+ width: 200px;
+  height: 200px;
+}
